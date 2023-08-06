@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="buttons.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="input">
+        <input class="input-text" placeholder="0" type="text" />
+      </div>
+      <div class="buttons">
+        <div class="uppers">
+          <button onclick="clickButton(this);" class="open upper">(</button>
+          <button onclick="clickButton(this);" class="close upper">)</button>
+          <button onclick="getLastAnswer();" class="ans upper meta">ANS</button>
+          <button onclick="deleteChar();" class="delete upper meta">DEL</button>
+          <button onclick="clearAll();" class="all-clear upper meta">AC</button>
+        </div>
+        <div class="lowers">
+          <div class="numbers">
+            <button onclick="clickButton(this);" class="number7 number">
+              7
+            </button>
+            <button onclick="clickButton(this);" class="number8 number">
+              8
+            </button>
+            <button onclick="clickButton(this);" class="number9 number">
+              9
+            </button>
+            <button onclick="clickButton(this);" class="number4 number">
+              4
+            </button>
+            <button onclick="clickButton(this);" class="number5 number">
+              5
+            </button>
+            <button onclick="clickButton(this);" class="number6 number">
+              6
+            </button>
+            <button onclick="clickButton(this);" class="number1 number">
+              1
+            </button>
+            <button onclick="clickButton(this);" class="number2 number">
+              2
+            </button>
+            <button onclick="clickButton(this);" class="number3 number">
+              3
+            </button>
+            <button onclick="clickButton(this);" class="number0 number">
+              0
+            </button>
+            <button onclick="clickButton(this);" class="number00 number">
+              00
+            </button>
+            <button onclick="clickButton(this);" class="number. number">
+              .
+            </button>
+          </div>
+          <div class="operators">
+            <button
+              onclick="clickButton(this);"
+              class="percent operator small-operator"
+            >
+              &#37;
+            </button>
+            <button
+              onclick="clickButton(this);"
+              class="exponent operator small-operator"
+            >
+              &#94;
+            </button>
+            <button
+              onclick="clickButton(this);"
+              class="multiplication operator small-operator"
+            >
+              *
+            </button>
+            <button
+              onclick="clickButton(this);"
+              class="division operator small-operator"
+            >
+              /
+            </button>
+            <button
+              onclick="clickButton(this);"
+              class="addition operator big-operator"
+            >
+              +
+            </button>
+            <div class="minus-equal">
+              <button
+                onclick="clickButton(this);"
+                class="minus operator big-operator"
+              >
+                -
+              </button>
+              <button
+                onclick="getResult();"
+                class="equal operator big-operator"
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="clicking-buttons2.js"></script>
+  </body>
+</html>

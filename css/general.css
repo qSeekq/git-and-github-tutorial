@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root{
+    --dark-blue: #001C30;
+    --lil-dark:#176B87;
+    --blue:#64CCC5;
+    --light-blue:#0DFFE5;
+    --lightest-blue:#DAFFFB;
+    --red:#CC86A4;
+
+    --f-small:1.8125rem;
+    --f:2rem;
+    --f-medium:2.5rem;
+    --f-large:3.125rem;
+
+    --primary-font:'Inter',sans-serif;
+    --secondary-font:'Orbitron',sans-serif;
+
+    --br-small:0.625rem;
+    --br:1.5625rem;
+    --br-large:2.8125rem;
+    --br-circle:50%;
+
+}
+
+body{
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+.calculator{
+    width: 35.375rem;
+    height: 43.9375rem;
+
+    border: 7px black solid;
+    background-color: var(--lil-dark);
+    border-radius: var(--br-large);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+*{
+    /* justify-content: inherit;
+    align-items: inherit; */
+    margin: 0;
+    padding: 0 ;
+    font-family: var(--primary-font);
+}
+button{
+    cursor: pointer;
+}

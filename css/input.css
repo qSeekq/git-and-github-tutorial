@@ -1,0 +1,36 @@
+.input{
+    width: 31.6875rem;
+    height: 10.375rem;
+
+    border-radius: var(--br);
+    border: 5px solid #000;
+    background: var(--light-blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3.5rem auto 1.13rem auto;
+}
+
+.input-text{
+    background: #0DFFE5;
+    border: 6px solid var(--lil-dark);
+    outline: none;
+
+    width: 25.5rem;
+    height: 7.1875rem;
+    border-radius: var(--br);
+
+
+    text-align: end;
+    font-size: 5rem;
+    font-family: var(--secondary-font);
+}
+
+.input-text::placeholder{
+    font-size:5rem ;
+    color:var(--lil-dark) ;
+    text-align: inherit;
+    font-family: var(--secondary-font);
+}
